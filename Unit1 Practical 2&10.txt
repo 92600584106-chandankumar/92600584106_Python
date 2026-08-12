@@ -1,0 +1,394 @@
+2.Write a program to illustrate the use of different
+data types and type casting.
+
+
+integer_value = 10
+float_value = 25.5
+string_value = "100"
+boolean_value = True
+complex_value = 3 + 4j
+
+print("Integer:", integer_value, type(integer_value))
+print("Float:", float_value, type(float_value))
+print("String:", string_value, type(string_value))
+print("Boolean:", boolean_value, type(boolean_value))
+print("Complex:", complex_value, type(complex_value))
+
+a = float(integer_value)
+print("\nInteger to Float:", a)
+
+b = str(integer_value)
+print("Integer to String:", b)
+
+c = int(string_value)
+print("String to Integer:", c)
+
+d = float(string_value)
+print("String to Float:", d)
+
+e = bool(integer_value)
+print("Integer to Boolean:", e)
+
+f = int(float_value)
+print("Float to Integer:", f)
+
+3. Write a program to perform arithmetic,
+relational and logical operations using Python
+operators.
+
+a = 10
+b = 5
+
+print("Arithmetic Operations:")
+print("----------------------")
+
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
+print("Modulus:", a % b)
+print("Floor Division:", a // b)
+print("Power:", a ** b)
+
+print("\nRelational Operations:")
+print("---------------------")
+
+print("a == b:", a == b)
+print("a != b:", a != b)
+print("a > b:", a > b)
+print("a < b:", a < b)
+print("a >= b:", a >= b)
+print("a <= b:", a <= b)
+
+print("\nLogical Operations:")
+print("------------------")
+
+print("(a > 5) and (b < 10):", (a > 5) and (b < 10))
+print("(a > 15) or (b < 10):", (a > 15) or (b < 10))
+print("not(a > b):", not(a > b))
+
+4.Write a program to demonstrate string
+operations including slicing formatting and
+built-in string functions.
+
+text = "Python Programming"
+
+print("Original String:")
+print(text)
+
+print("\nString Indexing:")
+print("First character:", text[0])
+print("Last character:", text[-1])
+
+
+print("\nString Slicing:")
+print("First 6 characters:", text[0:6])
+print("Programming:", text[7:18])
+print("Every second character:", text[::2])
+print("Reverse string:", text[::-1])
+
+name = "Rahul"
+age = 20
+
+print("\nString Formatting:")
+print(f"My name is {name} and I am {age} years old.")
+
+print("\nBuilt-in String Functions:")
+
+print("Length:", len(text))
+print("Uppercase:", text.upper())
+print("Lowercase:", text.lower())
+print("Capitalize:", text.capitalize())
+print("Title:", text.title())
+print("Replace:", text.replace("Python", "Java"))
+print("Find 'Programming':", text.find("Programming"))
+print("Count of 'm':", text.count("m"))
+
+sample = "   Hello Python   "
+print("Before strip:", sample)
+print("After strip:", sample.strip())
+
+words = text.split()
+print("After split:", words)
+
+5.Write a program to create and manipulate lists
+using indexing slicing and list comprehensions.
+
+
+numbers = [10, 20, 30, 40, 50]
+
+print("Original List:")
+print(numbers)
+
+
+print("\nList Indexing:")
+print("First element:", numbers[0])
+print("Third element:", numbers[2])
+print("Last element:", numbers[-1])
+
+print("\nList Slicing:")
+print("First three elements:", numbers[0:3])
+print("Middle elements:", numbers[1:4])
+print("Last three elements:", numbers[2:])
+print("Reverse list:", numbers[::-1])
+
+print("\nList Manipulation:")
+
+numbers.append(60)
+print("After append:", numbers)
+
+numbers.insert(2, 25)
+print("After insert:", numbers)
+
+numbers.remove(25)
+print("After remove:", numbers)
+
+numbers.pop()
+print("After pop:", numbers)
+
+numbers.sort()
+print("After sorting:", numbers)
+
+numbers.reverse()
+print("After reverse:", numbers)
+
+print("Length of list:", len(numbers))
+
+
+print("\nList Comprehension:")
+
+squares = [x * x for x in range(1, 6)]
+print("Squares:", squares)
+
+even_numbers = [x for x in range(1, 11) if x % 2 == 0]
+print("Even numbers:", even_numbers)
+
+
+odd_numbers = [x for x in range(1, 11) if x % 2 != 0]
+print("Odd numbers:", odd_numbers)
+
+6.Write a program to illustrate the use of tuples
+and sets with basic operations.
+
+numbers = (10, 20, 30, 40, 50, 20)
+
+print("TUPLE OPERATIONS")
+
+
+print("Original Tuple:", numbers)
+
+
+print("First element:", numbers[0])
+print("Last element:", numbers[-1])
+
+print("Sliced Tuple:", numbers[1:4])
+
+print("Length of Tuple:", len(numbers))
+
+print("Count of 20:", numbers.count(20))
+
+print("Index of 30:", numbers.index(30))
+
+set1 = {10, 20, 30, 40}
+set2 = {30, 40, 50, 60}
+
+print("\nSET OPERATIONS")
+print("-------------")
+
+print("Set 1:", set1)
+print("Set 2:", set2)
+
+set1.add(50)
+print("After adding 50:", set1)
+
+
+set1.remove(50)
+print("After removing 50:", set1)
+
+print("Union:", set1.union(set2))
+
+print("Intersection:", set1.intersection(set2))
+
+print("Set1 - Set2:", set1.difference(set2))
+
+print("Set2 - Set1:", set2.difference(set1))
+
+7.Write a program to create a dictionary and
+demonstrate dictionary methods and iteration.
+
+
+student = {
+    "name": "Rahul",
+    "age": 20,
+    "course": "BCA",
+    "marks": 85
+}
+
+print("Original Dictionary:")
+print(student)
+
+
+print("\nAccessing Dictionary Values:")
+print("Name:", student["name"])
+print("Age:", student["age"])
+print("Course:", student["course"])
+
+
+print("\nUsing get() method:")
+print("Marks:", student.get("marks"))
+
+
+print("\nDictionary Keys:")
+print(student.keys())
+
+
+print("\nDictionary Values:")
+print(student.values())
+
+
+print("\nDictionary Items:")
+print(student.items())
+
+
+student.update({"marks": 90, "city": "Patna"})
+print("\nAfter update():")
+print(student)
+
+
+student.pop("city")
+print("\nAfter pop():")
+print(student)
+
+
+print("\nLength of Dictionary:")
+print(len(student))
+
+
+print("\nIteration through Keys:")
+for key in student:
+    print(key)
+
+
+print("\nIteration through Values:")
+for value in student.values():
+    print(value)
+
+print("\nIteration through Key-Value Pairs:")
+for key, value in student.items():
+    print(key, ":", value)
+
+8.Write a program to explain mutable and
+immutable objects in Python.
+
+
+print("MUTABLE OBJECT")
+print("--------------")
+
+numbers = [10, 20, 30]
+
+print("Original List:", numbers)
+print("ID before change:", id(numbers))
+
+numbers.append(40)
+
+print("Modified List:", numbers)
+print("ID after change:", id(numbers))
+
+
+print("\nIMMUTABLE OBJECT")
+print("----------------")
+
+x = 10
+
+print("Original value:", x)
+print("ID before change:", id(x))
+
+x = x + 5
+
+print("Modified value:", x)
+print("ID after change:", id(x))
+
+
+print("\nSTRING - IMMUTABLE")
+
+name = "Python"
+
+print("Original String:", name)
+print("ID before change:", id(name))
+
+name = name + " Programming"
+
+print("Modified String:", name)
+print("ID after change:", id(name))
+
+9.Write a program to define and use user-defined
+functions with different types of arguments.
+
+
+def add(a, b):
+    return a + b
+
+
+print("1. Positional Arguments")
+print("Addition:", add(10, 20))
+
+
+def student(name, age):
+    print("Name:", name)
+    print("Age:", age)
+
+
+print("\n2. Keyword Arguments")
+student(age=20, name="Chandan")
+
+
+def greet(name, message="Good Morning"):
+    print(message, name)
+
+
+print("\n3. Default Argument")
+greet("Chandan")
+greet("Amit", "Good Evening")
+
+
+def total(*numbers):
+    result = 0
+
+    for num in numbers:
+        result = result + num
+
+    return result
+
+
+print("\n4. Variable-Length Arguments")
+print("Total:", total(10, 20))
+print("Total:", total(10, 20, 30, 40))
+
+
+def display_details(**details):
+    for key, value in details.items():
+        print(key, ":", value)
+
+
+print("\n5. Variable-Length Keyword Arguments")
+display_details(name="Chandan", age=20, course="MCA")
+
+10.Write a program to demonstrate recursion using
+factorial or Fibonacci series.
+
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+
+    else:
+        return n * factorial(n - 1)
+
+
+num = int(input("Enter a number: "))
+
+if num < 0:
+    print("Factorial is not defined for negative numbers.")
+else:
+    result = factorial(num)
+    print("Factorial of", num, "is:", result)
